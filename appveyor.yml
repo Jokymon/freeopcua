@@ -15,6 +15,6 @@ install:
 
 build_script:
     - cmake -E make_directory build
-    - cmake -E chdir build
+    - cd build
     - cmake -G"MinGW Makefiles" .. -DSSL_SUPPORT_MBEDTLS=OFF
     - cmake --build .
