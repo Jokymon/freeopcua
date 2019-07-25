@@ -12,7 +12,7 @@ install:
     - cmd: set PATH=%BOOST_LIBRARYDIR%;%PATH%
     - cmd: set PATH=%MINGW_ROOT%\bin;C:\msys64\usr\bin\;%PATH%
     - bash -lc "pacman --needed --noconfirm -S mingw-w64-x86_64-boost"
-    - rname "C:/msys64/usr/bin/sh.exe" "C:/msys64/usr/bin/sh-ignore.exe"
+    - rename "C:/msys64/usr/bin/sh.exe" "C:/msys64/usr/bin/sh-ignore.exe"
 
 build_script:
     - cmake -E make_directory build
